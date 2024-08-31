@@ -27,7 +27,7 @@ def predict_image(img_array):
     if model is None:
         return "Model not loaded"
     prediction = model.predict(img_array)
-    return "Non-ASD" if prediction[0][0] > 0.5 else "ASD"
+    return 0 if prediction[0][0] > 0.5 else 1
 
 @app.route('/predict', methods=['POST'])
 def predict():
