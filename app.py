@@ -8,6 +8,8 @@ app = Flask(__name__)
 
 # Load the model
 model_path = os.path.join('model', 'autism_binary_coloring_modelv.h5')
+model = None
+
 try:
     model = load_model(model_path)
 except Exception as e:
