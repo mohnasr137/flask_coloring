@@ -1,6 +1,6 @@
 import os
 from flask import Flask, request, jsonify, render_template
-from tensorflow.python.keras.models import load_model
+from tensorflow.keras.models import load_model
 from keras.utils import load_img, img_to_array
 import numpy as np
 
